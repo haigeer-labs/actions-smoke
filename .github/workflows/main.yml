@@ -1,0 +1,11 @@
+name: Actions smoke
+
+on:
+  workflow_dispatch:
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Verify hosted runner
+        run: echo "GitHub Actions is available for haigeer-labs"
